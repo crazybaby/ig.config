@@ -74,8 +74,8 @@ set fileencodings=ucs-bom,utf8,chinese,taiwan,ansi
 set foldlevel=1000
 set foldmethod=marker 
 "set foldmarker=[[[,]]]
-au BufWinLeave * mkview "保存上次折叠
-au BufWinEnter * silent loadview
+au BufWinLeave ?* mkview "保存上次折叠
+au BufWinEnter ?* silent loadview
 nnoremap tt @=((foldclosed(line('.')) < 0) ? 'zc':'zo') <CR>
 "<@Folding Config End>@"
 
@@ -247,8 +247,9 @@ set laststatus=2
 "let g:airline#extensions#tabline#enabled = 1 "don't open
 "let g:airline#extensions#tabline#left_sep = ' '
 "let g:airline#extensions#tabline#left_alt_sep = '|'
-"let g:airline_theme="bubblegum"
+let g:airline_theme="bubblegum"
 "vim-airline"
+
 
 """"shotcuts
 "mm -> 标记一行
