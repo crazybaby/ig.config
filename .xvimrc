@@ -1,0 +1,7 @@
+:imap <c-f> <right>
+:imap <c-b> <left>
+:imap <c-p> <up>
+:imap <c-n> <down>
+:imap <c-e> <esc>A
+:imap <c-a> <esc>I
+:imap <c-k> <ESC>d$
