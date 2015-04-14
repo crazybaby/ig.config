@@ -1,9 +1,6 @@
 [submodule "vim/bundle/a.vim"]
 	path = vim/bundle/a.vim
 	url = git@github.com:vim-scripts/a.vim.git
-[submodule "vim/bundle/EnhancedCommentify"]
-	path = vim/bundle/EnhancedCommentify
-	url = git@github.com:hrp/EnhancedCommentify.git
 [submodule "vim/bundle/xml.vim"]
 	path = vim/bundle/xml.vim
 	url = git@github.com:othree/xml.vim.git
