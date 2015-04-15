@@ -1,4 +1,5 @@
 execute pathogen#infect()
+"http://ctags.sourceforge.net/ install ctags
 set t_Co=256
 "............................
 "<@Platform Diff Go@>"
@@ -88,6 +89,12 @@ inoremap jj <Esc>
 ":imap <ESC> <ESC>:w!<cr>
 :map <leader>sv :vne<cr>
 :map <leader>ss :sp<cr>
+
+""tagbar
+:map <leader>tt :TagbarToggle<CR>
+let g:tagbar_ctags_bin = 'ctags'
+let g:tagbar_width = 30
+
 vnoremap  *  y/<C-R>=escape(@", '\\/.*$^~[]')<CR><CR>
 vnoremap  #  y?<C-R>=escape(@", '\\/.*$^~[]')<CR><CR>
 try
@@ -254,3 +261,17 @@ let g:airline_theme="bubblegum"
 """"shotcuts
 "mm -> 标记一行
 ",l -> 跳跃一行
+
+""""Go
+"disable shows erros for the fmt command
+let g:go_fmt_fail_silently = 1 
+
+let g:go_highlight_functions = 1
+let g:go_highlight_methods = 1
+let g:go_highlight_structs = 1
+let g:go_highlight_operators = 1
+let g:go_highlight_build_constraints = 1
+
+"au FileType go nmap <Leader>ds <Plug>(go-def-split)
+"au FileType go nmap <Leader>dv <Plug>(go-def-vertical)
+"au FileType go nmap <Leader>dt <Plug>(go-def-tab)
