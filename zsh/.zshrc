@@ -90,6 +90,10 @@ alias cp='cp -i'
 alias mv='mv -i'
 alias rm='rm -i'
 
+#go语言
+alias gb='go build'
+alias gr='go run'
+
 unamestr=`uname`
 if [[ "$unamestr" == 'Linux' ]]; then
 	alias ls='ls -F --color=auto' 
